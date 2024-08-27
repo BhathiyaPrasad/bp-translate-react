@@ -1,23 +1,30 @@
 {
   "name": "translation-widget-library",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js", 
+  "module": "dist/index.esm.js", 
+  "types": "dist/index.d.ts", 
   "files": [
-    "dist",
-    "public/utils/gt.min.js",
-    "public/flags",
-    "src/components/TranslationWidget"
+    "dist", 
+    "public/utils/gt.min.js", 
+    "public/flags", 
+    "src/components/TranslationWidget" 
   ],
+  "author": "Bhathiya Prasad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhathiyaprasad/bp-translate-react/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build && tsc --noEmit",
-    "prepare": "npm run build"
+    "build": "next build && tsc --outDir dist", 
+    "prepare": "npm run build" 
   },
   "dependencies": {
     "next": "14.2.6",
-    "react": "^18",
+    "react": "^18", 
     "react-dom": "^18"
   },
   "devDependencies": {
@@ -29,5 +36,9 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "react": "^18", 
+    "react-dom": "^18"
   }
 }
