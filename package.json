@@ -1,9 +1,8 @@
 {
   "name": "translation-widget-library",
   "version": "1.0.0",
-  "main": "dist/index.js", 
-  "module": "dist/index.esm.js", 
-  "types": "dist/index.d.ts", 
+  "main": "dist/src/components/TranslationWidget/index.js", 
+  "types": "dist/src/components/TranslationWidget/index.d.ts", 
   "files": [
     "dist", 
     "public/utils/gt.min.js", 
@@ -19,7 +18,7 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build && tsc --outDir dist", 
+    "build": "next build && tsc --outDir dist && copyfiles -u 1 public/**/* dist/", 
     "prepare": "npm run build" 
   },
   "dependencies": {
