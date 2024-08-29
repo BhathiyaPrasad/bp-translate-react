@@ -1,43 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "target": "ES6",                // or 'ES5', 'ES2015', etc.
+    "module": "commonjs",           // or 'ESNext', 'ES6', etc.
+    "jsx": "react-jsx",             // Use 'react' if using React 16 or below, or 'react-jsx' for React 17+
+    "declaration": true,            // Generate .d.ts files for type declarations
+    "outDir": "./dist",             // Output directory for compiled files
+    "rootDir": "./src",             // Root directory of input files
+    "strict": true,                 // Enable all strict type-checking options
+    "esModuleInterop": true,        // Enables emit interoperability between CommonJS and ES Modules
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "incremental": true,
-    "jsx": "preserve",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "baseUrl": "./src",
-    "paths": {
-      "@components/*": [
-        "components/*"
-      ]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "skipLibCheck": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src"],               // Include all files in the `src` folder
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist folders
 }
