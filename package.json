@@ -18,7 +18,7 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build && tsc --outDir dist && copyfiles -u 1 public/**/* dist/", 
+    "build": "next build && tsc --outDir dist", 
     "prepare": "npm run build" 
   },
   "dependencies": {
