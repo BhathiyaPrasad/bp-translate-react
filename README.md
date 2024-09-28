@@ -1,3 +1,3 @@
 # Quick Setup Guide
 
-.... (Under Developing)
+.... (Currently Under Development)
